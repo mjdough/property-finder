@@ -1,0 +1,71 @@
+<h1>Contact us: </h1>
+<nav>
+<ul class="goto">
+<table>
+
+<li><%= link_to 'About', about_path %></li>
+<li><%= link_to 'Agents', agents_path %></li>
+<li><%= link_to 'Listings', listings_path %></li>
+<li><%= link_to 'Rentals', rentals_path %></li>
+<li><%= link_to 'Home', root_path %></li>
+
+</table>
+</ul>
+</nav>
+<%= image_tag 'terracottage.jpg' %>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<title>Let us help you!</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<header>
+<h1>Let us help you!</h1>
+</header>
+
+
+<figure>
+<%= image_tag 'dock-thumb.jpg' %>
+</figure>
+
+<form action="survey.php" method="post">
+<fieldset>
+<legend>Personal Information</legend>
+Your Name<br/>
+<input type="text" name="name" required size="40"/><br/>
+Email Address<br/>
+<input type="email" name="email" required placeholder="enter a valid email address" size="40"/><br/>
+</fieldset>
+<fieldset>
+<legend>What are your needs?</legend>
+Tell us how we can help.<br/>
+<textarea name="sellorbuy" cols="40" rows="6"></textarea>
+<br/><br/>
+Do you want to sell or buy?<br/>
+<input type="radio" name="goal" value="sell"/>sell<br/>
+<input type="radio" name="goal" value="buy"/>buy<br/>
+<br/>
+Do you need a rental?<br/>
+<input type="checkbox" name="living" value="vacation"/>vacation<br/>
+<input type="checkbox" name="living" value="residential"/>residential<br/>
+<br/>
+What is your favorite home?<br/>
+<select name="favorite">
+<option value="">please select a type of home.</option>
+<option value="fram">farm</option>
+<option value="townhouse">townhouse</option>
+<option value="condominium">condominium</option>
+<option value="house with land">home with land</option>
+</select>
+</fieldset>
+</form>
+<footer>
+
+</footer>
+</body>
+</html>

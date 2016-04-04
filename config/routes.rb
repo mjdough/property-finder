@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   root 'pages#home'
   get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
   get 'agents', to: 'pages#agents'
   get 'listings', to: 'pages#listings'
   get 'rentals', to: 'pages#rentals'
