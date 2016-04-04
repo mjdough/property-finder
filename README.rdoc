@@ -1,0 +1,18 @@
+Property-finder is a smart Real Estate web application
+meant to enable people to find the properties that they are
+interested in buying or renting. Sellers can do market research
+before listing a property for sale or rent, and could compare
+taxes, and other attributes of properties locally and 
+across the country.
+
+Like a traditional website there are five pages: home/index, 
+directions/about, agents/contact, listings/sale, rentals/vacation.
+Once the person has searched, and before quitting they're given
+an opportunity to save their search results, if they register
+as users and provide name, username, email, password, and telephone
+number.
+
+Searches are done in three levels: the first is among the Real Estate
+Agency's listing, and the second among the local Multiple Listing
+Service (MLS) properties. The last level is among public tax records,
+real estate websites, and nationally based MLS sites.

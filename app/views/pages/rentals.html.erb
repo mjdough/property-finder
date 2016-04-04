@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>rentals</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<header>
+<h1>Rentals</h1>
+<nav>
+<ul class="goto">
+<table>
+<li><%= link_to 'About', about_path %></li>
+<li><%= link_to 'Listings', listings_path %></li>
+<li><%= link_to 'Agents', agents_path %></li>
+<li><%= link_to 'Home', root_path %></li>
+</table>
+</ul>
+</nav>
+</header>
+<h1>Vacation Properties</h1>
+<figure class="photo-right">
+ <div class="photo-right"><%= image_tag 'water.jpg' %></div>
+<figcaption>Fields</figcaption>
+</figure>
+<p></p>
+<p>
+There are two choices for most Residential or Short-Term Vacation rentals: 
+<ul>
+<li>Residents</li>
+<li>Fun seekers</li>
+</ul>
+</p>
+<footer>
+
+</footer>
+</body>
+</html>
+

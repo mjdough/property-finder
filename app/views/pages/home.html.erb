@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Terra Cottage Realty Group, LLC</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+<h1>Terra Cottage Realty Group, LLC</h1>
+<nav>
+<ul class="goto">
+<table>
+
+<li><%= link_to 'About', about_path %></li>
+<li><%= link_to 'Agents', agents_path %></li>
+<li><%= link_to 'Listings', listings_path %></li>
+<li><%= link_to 'Rentals', rentals_path %></li>
+
+</table>
+</ul>
+</nav>
+</header>
+<h1>Pocono Properties</h1>
+<aside>
+<div><h3>Selling your house?</h3></div>
+<blockquote>Selling your home is an involved process that affects your family and your future.  Before you begin this process, you'll want to ensure that you have the most up-to-date information.  When should you sell?  How do you get the best price? What kinds of renovations should be made prior to the sale? 
+
+These home selling reports will assist you in answering the many questions that arise during the home selling process.  When you're armed with the right information, and an experienced real estate professional, you'll be closer to reaching your goal - selling your home fast, and for the best price.
+</aside>
+<section>
+<img class="photo-left" src="images/terracottage.jpg" alt="Pocono Real Estate" width="128" height="128"/>
+<p>Welcome to Terra Cottage Realty Group, your one stop source for Pocono Mountain Real Estate.
+ 
+Terra Cottage Realty Group is located in the Heart of Lake Harmony, Pennsylvania home to the Ski Resorts at Jack Frost Mountain and Big Boulder. The Terra Cottage Team specializes in the purchase and sale of single-family residences and income property within the communities of Lake Harmony Estates, Snow Ridge at Jack Frost Mountain, Split Rock Resort, Blue Heron, Mid Lakes and Laurelwoods at Big Boulder Ski Area, Towamensing Trails, Brier Crest Woods, and the surrounding communities of Carbon and Monroe Counties.
+ 
+<p>If you own real estate that you're thinking of selling, we will be happy to provide you with a FREE Home Evaluation and our Targeted Marketing Plan.
+We can help you purchase any property in North East Pennsylvania. Many good homes are sold before they are ever advertised. Beat other home buyers to the hottest new homes for sale in the Pocono Mountain Area with our New Listings Notification or Search the Pocono Mountain MLS for all Pocono homes ! Visit our Listing page and Featured Home Section for recent postings.
+<p>
+Do you know how much home you can afford? Avoid surprises; call for a no obligation Pre-Qualification or Pre-Approval.</p>
+<p>Whether you are buying or selling a home, business or commercial property, hire a professional agent that wants to earn your business. I invite you to contact us today for a no obligation consultation. </p>
+</p>
+</section>
+<footer>
+
+</footer>
+</body>
+</html>
+
+<h1>This is the home page </h1>
+
+
+<%= image_tag 'dock.jpg' %>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<title>Let us help you!</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<header>
+<h1>Pocono Properties</h1>
+
+</header>
+<h1>Let us help you!</h1>
+
+<figure>
+<img src="images/water-thumb.jpg" alt="Water" width="180" height="180"/>
+</figure>
+
+<form action="survey.php" method="post">
+<fieldset>
+<legend>Personal Information</legend>
+Your Name<br/>
+<input type="text" name="name" required size="40"/><br/>
+Email Address<br/>
+<input type="email" name="email" required placeholder="enter a valid email address" size="40"/><br/>
+</fieldset>
+<fieldset>
+<legend>What are your needs?</legend>
+Tell us how we can help.<br/>
+<textarea name="sellorbuy" cols="40" rows="6"></textarea>
+<br/><br/>
+Do you want to sell or buy?<br/>
+<input type="radio" name="goal" value="sell"/>sell<br/>
+<input type="radio" name="goal" value="buy"/>buy<br/>
+<br/>
+Do you need a rental?<br/>
+<input type="checkbox" name="living" value="vacation"/>vacation<br/>
+<input type="checkbox" name="living" value="residential"/>residential<br/>
+<br/>
+What is your favorite home?<br/>
+<select name="favorite">
+<option value="">please select a type of home.</option>
+<option value="fram">farm</option>
+<option value="townhouse">townhouse</option>
+<option value="condominium">condominium</option>
+<option value="house with land">home with land</option>
+</select>
+</fieldset>
+</form>
+<footer>
+
+</footer>
+</body>
+</html>
