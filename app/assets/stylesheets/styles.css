@@ -25,12 +25,12 @@ color:black;
 
 nav ul{
 list-style:none;
-padding:0;
+padding: 10px;
 }
 
-nav li{
+li{
 display:inline;
-float:left;
+padding: 10px;
 }
 
 .goto {
