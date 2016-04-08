@@ -10,30 +10,26 @@
 <body>
 <header>
 <h1>Rentals</h1>
-<nav>
-<ul class="goto">
-<table>
-<li><%= link_to 'Contact', contact_path %></li>
-<li><%= link_to 'About', about_path %></li>
-<li><%= link_to 'Listings', listings_path %></li>
-<li><%= link_to 'Agents', agents_path %></li>
-<li><%= link_to 'Home', root_path %></li>
-</table>
-</ul>
-</nav>
+
 </header>
 <h1>Vacation Properties</h1>
-<figure class="photo-right">
+<figure class>
  <div class="photo-right"><%= image_tag 'water.jpg' %></div>
-<figcaption>Fields</figcaption>
 </figure>
 <p></p>
 <p>
 There are two choices for most Residential or Short-Term Vacation rentals: 
-<ul>
-<li>Residents</li>
-<li>Fun seekers</li>
-</ul>
+</br>
+    <figure>
+        <div class="photo-leftt"><%= image_tag 'duck-thumb.jpg' %></div>
+        <figcaption>Residents</figcaption>
+    </figure>
+</br>
+</br>
+    <figure>
+        <div class="photo-leftt"><%= image_tag 'bear-thumb.jpg' %></div>
+        <figcaption>Fun seekers</figcaption>
+    </figure>
 </p>
 <footer>
 

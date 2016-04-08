@@ -2,7 +2,7 @@ body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 18px;
 }
 
@@ -55,7 +55,7 @@ div {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 
-  h2 {
+  h3 {
     text-align: left;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
@@ -71,7 +71,10 @@ div {
     list-style: square;
   }
 }
-
+.info {
+  text-align: center;
+  padding-right: 20px;
+}
 
 a:link, a:visited{
 text-decoration:none;
@@ -79,7 +82,7 @@ color:brown;
 font-weight:bold;
 }
 a:hover{	
-color:black;	
+color:lightgreen;	
 }
 div h3 {
 text-align:center;
@@ -99,7 +102,7 @@ nav ul li .goto {
 	float: left
 }
 nav a:link, nav a:visited{
-background-color:lightgrey;
+background-color:lightblue;
 color:white;
 display:block;
 width:160px;
@@ -107,28 +110,19 @@ text-align:center;
 padding:10px 0;
 }
 nav a:hover{
-background-color:black;
+background-color:lightgreen;
 }
 
-aside figure img {
-	width:180px;
-	height:180px;
-	float:left;
-
-}
 aside{
 	width:280px;
 	float:right;
-	background-color:lightgrey;
 	text-align:left;
-	font-size:80%;
-	font-weight:bold;
 	padding:20px;
 	margin-left:20px;
 }
 .photo-left{
 	float:left;
-	margin-right:20px;
+	margin-left:40px;
 }
 .photo-right{
 	float:right;
@@ -136,7 +130,7 @@ aside{
 }
 
 header{
-	background-color: grey;
+	background-color:lightblue;
 	height:100px;
 	margin-bottom:70px;
 }
