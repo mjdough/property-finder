@@ -1,4 +1,4 @@
-$navbar-default-bg: black;
+$navbar-default-bg: yellow;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -6,7 +6,7 @@ $navbar-default-bg: black;
 #logo {
   float: left;
   font-size: 1.7em;
-  color: #fff;
+  color: brown;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
@@ -18,12 +18,13 @@ $navbar-default-bg: black;
 
 }
 
+
 .center {
   text-align: center;
 }
 
 .jumbotron {
-  background-image: asset-url('duck.jpg');
+  background-image: asset-url('images/HPIM0799.jpg');
   background-size: cover;
   height: 550px;
 }
@@ -67,6 +68,10 @@ $navbar-default-bg: black;
   padding-left: 0;
 }
 
+.address {
+  margin-top: 0;
+}
+
 .badge {
   background-color: #CEF6F5;  
   text-transform: uppercase;
@@ -104,6 +109,9 @@ footer ul li {
   margin-left: 15px;
 }
 
-li {
-  color: red;
+aside{
+	width:280px;
+	float:right;
+	margin-left:20px;
 }
+
