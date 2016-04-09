@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407111802) do
+ActiveRecord::Schema.define(version: 20160408202335) do
 
   create_table "listings", force: :cascade do |t|
     t.string   "mlscode"
@@ -26,8 +26,9 @@ ActiveRecord::Schema.define(version: 20160407111802) do
     t.string   "username"
     t.string   "email"
     t.boolean  "admin"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
 
 end
