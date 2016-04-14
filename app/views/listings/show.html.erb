@@ -1,8 +1,14 @@
+<% if User.find(@listing.user_id) == current_user %>
 <h2 align="center">MLS Code: <%= @listing.mlscode %></h2>
   <div class="well col-xs-8 col-xs-offset-2">
     <h4 class="center address"<strong>Address:</strong></h4>
     <hr>
     <%= simple_format(@listing.address) %>
+    <div class="listing-meta-details">
+          <small>Created by: <%= User.find(@listing.user_id).name %>  |  : 
+          <%= time_ago_in_words(@listing.created_at) %> ago, last updates: 
+          <%= time_ago_in_words(@listing.updated_at) %> ago</small>
+    </div>
     <div class="listing-actions">
       <%= link_to "Edit this listing", edit_listing_path(@listing), class: "btn btn-xs btn-primary" %> 
       <%= link_to "Delete this listing", listing_path(@listing), method: :delete, data: { confirm: 
@@ -10,18 +16,5 @@
       <%= link_to "View all listings", listings_path, class: "btn btn-xs btn-success" %>
     </div>
   </div>
-
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Mlscode:</strong>
-  <%= @listing.mlscode %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @listing.address %>
-</p>
-
-
+<% else %>You have no listings, please add some.
+<% end %>
